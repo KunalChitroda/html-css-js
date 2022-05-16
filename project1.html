@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - HTML, CSS, JavaScript</title>
+    <script>
+        let a;
+        let date1;
+        let time1;
+        setInterval(()=>{
+            a = new Date();
+            date1 = a.toLocaleDateString();
+            time1 = a.toLocaleTimeString();
+            document.getElementById('time').innerHTML= time1 +" On " + date1;
+        }, 1000)
+        
+    </script>
+</head>
+<body>
+    <h1>Current time is : <span id="time"></span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero porro perspiciatis vel fugit quae, provident minus possimus eaque quisquam maiores?</p>
+    <p>we are here to time for different Country </p>
+</body>
+</html>
